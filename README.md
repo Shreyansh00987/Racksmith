@@ -6,7 +6,11 @@
 [![Sanity](https://img.shields.io/badge/Sanity-Lake_r674mqrk-red?style=flat&logo=sanity)](https://sanity.io/)
 [![Model Context Protocol](https://img.shields.io/badge/MCP-Standard_1.2.0-blue)](https://modelcontextprotocol.io/)
 [![Three.js](https://img.shields.io/badge/Three.js-R3F-orange?style=flat&logo=three.js)](https://threejs.org/)
-[![Test Suite](https://img.shields.io/badge/Tests-15%2F15_Passing-brightgreen)](https://github.com/)
+[![Vercel Deployment](https://img.shields.io/badge/Vercel-racksmith.vercel.app-black?style=flat&logo=vercel)](https://racksmith.vercel.app)
+
+**🌐 Live Production App:** [https://racksmith.vercel.app](https://racksmith.vercel.app)  
+**📂 Live Sanity Studio:** [https://racksmith.vercel.app/studio](https://racksmith.vercel.app/studio)  
+**💻 GitHub Repository:** [https://github.com/Shreyansh00987/Racksmith](https://github.com/Shreyansh00987/Racksmith)
 
 ---
 
