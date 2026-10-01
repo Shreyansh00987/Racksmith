@@ -12,7 +12,8 @@
 > * **🚀 Live Production App:** [https://racksmith.vercel.app](https://racksmith.vercel.app)
 > * **📂 Live Sanity CMS Studio:** [https://racksmith.vercel.app/studio](https://racksmith.vercel.app/studio)
 > * **💻 GitHub Repository:** [https://github.com/Shreyansh00987/Racksmith](https://github.com/Shreyansh00987/Racksmith)
-> * **🎥 Demo Video Walkthrough (1:29 min with AI Voiceover):** [racksmith_demo_walkthrough.mp4](racksmith_demo_walkthrough.mp4)
+> * **🎥 Demo Video (YouTube):** [https://youtu.be/6P5E7SOY9S0](https://youtu.be/6P5E7SOY9S0)
+> * **📝 DEV.to Challenge Submission:** [Racksmith on DEV.to](https://dev.to/shreyansh_agrahari_2009db/racksmith-the-autonomous-modular-synth-planner-powered-by-sanity-context-mcp-pk)
 
 ---
 
