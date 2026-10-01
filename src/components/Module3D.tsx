@@ -183,28 +183,31 @@ export function Module3D({ module, position, isInvalid, onClick }: Module3DProps
       ))}
 
       {/* 6. Module Title Label */}
-      <Text
-        position={[width / 2, U * 0.38, 0.9 * SCALE]}
-        fontSize={Math.min(width * 0.16, 0.42)}
-        color={textColor}
-        anchorX="center"
-        anchorY="top"
-        maxWidth={width * 0.9}
-        font="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_au.woff2"
-      >
-        {module.name}
-      </Text>
+      <React.Suspense fallback={null}>
+        <Text
+          position={[width / 2, U * 0.38, 0.9 * SCALE]}
+          fontSize={Math.min(width * 0.16, 0.42)}
+          color={textColor}
+          anchorX="center"
+          anchorY="top"
+          maxWidth={width * 0.9}
+        >
+          {module.name}
+        </Text>
+      </React.Suspense>
 
       {/* 7. HP and Depth Badge */}
-      <Text
-        position={[width / 2, -U * 0.39, 0.9 * SCALE]}
-        fontSize={0.28}
-        color={isInvalid ? '#ff4d4f' : '#64748b'}
-        anchorX="center"
-        anchorY="bottom"
-      >
-        {`${module.hp}HP • ${module.depthMM}mm`}
-      </Text>
+      <React.Suspense fallback={null}>
+        <Text
+          position={[width / 2, -U * 0.39, 0.9 * SCALE]}
+          fontSize={0.28}
+          color={isInvalid ? '#ff4d4f' : '#64748b'}
+          anchorX="center"
+          anchorY="bottom"
+        >
+          {`${module.hp}HP • ${module.depthMM}mm`}
+        </Text>
+      </React.Suspense>
     </group>
   )
 }

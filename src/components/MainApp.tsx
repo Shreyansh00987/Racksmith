@@ -114,7 +114,15 @@ export function MainApp() {
       if (targetCase) setCase(targetCase)
 
       const resolvedMods = (moduleIds || []).map((id: string) => {
-        return availableModules.find(m => m._id === id || m.name.toLowerCase() === id.toLowerCase())
+        const query = (id || '').toLowerCase().trim()
+        return availableModules.find(m => 
+          m._id === id || 
+          m._id.toLowerCase() === query || 
+          m.name.toLowerCase() === query || 
+          m.name.toLowerCase().includes(query) ||
+          query.includes(m.name.toLowerCase()) ||
+          query.includes(m._id.toLowerCase())
+        )
       }).filter(Boolean)
 
       clearRack()
@@ -482,7 +490,7 @@ export function MainApp() {
           onDragOver={(e) => e.preventDefault()}
         >
           {/* 3D Canvas */}
-          <div className="flex-1 w-full h-full relative">
+          <div className="absolute inset-0 w-full h-full overflow-hidden">
             <Rack3D />
           </div>
 

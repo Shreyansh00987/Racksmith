@@ -97,16 +97,17 @@ export function Case3D({ currentCase }: Case3DProps) {
       ))}
 
       {/* 10. Case Specification Labels inside Chassis */}
-      <Text
-        position={[width / 2, U * 0.22, -depth + 0.2]}
-        fontSize={0.35}
-        color="#34d399"
-        anchorX="center"
-        anchorY="middle"
-        font="https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FZhsfKu5WU4zr3E_au.woff2"
-      >
-        {`${currentCase.name.toUpperCase()} • MAX DEPTH ${currentCase.maxDepthMM}mm • ${currentCase.hp}HP`}
-      </Text>
+      <React.Suspense fallback={null}>
+        <Text
+          position={[width / 2, U * 0.22, -depth + 0.2]}
+          fontSize={0.35}
+          color="#34d399"
+          anchorX="center"
+          anchorY="middle"
+        >
+          {`${currentCase.name.toUpperCase()} • MAX DEPTH ${currentCase.maxDepthMM}mm • ${currentCase.hp}HP`}
+        </Text>
+      </React.Suspense>
     </group>
   )
 }
