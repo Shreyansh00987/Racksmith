@@ -12,6 +12,7 @@
 > * **🚀 Live Production App:** [https://racksmith.vercel.app](https://racksmith.vercel.app)
 > * **📂 Live Sanity CMS Studio:** [https://racksmith.vercel.app/studio](https://racksmith.vercel.app/studio)
 > * **💻 GitHub Repository:** [https://github.com/Shreyansh00987/Racksmith](https://github.com/Shreyansh00987/Racksmith)
+> * **🎥 Demo Video Walkthrough (1:29 min with AI Voiceover):** [racksmith_demo_walkthrough.mp4](racksmith_demo_walkthrough.mp4)
 
 ---
 

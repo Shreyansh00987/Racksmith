@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
+.env*
+
+# Video temp frames
+frame_scene_*.png
+concat_list.txt
