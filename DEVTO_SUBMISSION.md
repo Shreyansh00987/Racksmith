@@ -96,48 +96,9 @@ Building a Eurorack modular synthesizer is notoriously treacherous. Beginners an
 
 ---
 
-### 🧪 Complete Walkthrough — Example 1: The 5-Step Golden Flow
+### 🤖 End-to-End Walkthrough: Autonomous AI Agent via Sanity MCP
 
-In this end-to-end demonstration, we explore how Racksmith detects physical hardware collisions and handles manufacturer errata:
-
-#### 1. Initial Dashboard & 3D Hardware Canvas
-When opening Racksmith, users are greeted by the interactive 3D Eurorack canvas, active power consumption meters, and the Sanity Knowledge Lake inventory.
-
-![Step 1 - Initial Page](https://raw.githubusercontent.com/Shreyansh00987/Racksmith/main/screenshots/01_initial_page.png)
-
-#### 2. Loading the Ambient 7U Performance Rack
-Loading the curated Ambient 7U preset populates an Intellijel 7U 104HP case with complex modules (Morphagene, Rings, Beads, Maths). The mathematical engine confirms all modules fit within the 104HP limit and remain within the 80% power budget.
-
-![Step 2 - Ambient 7U Rack](https://raw.githubusercontent.com/Shreyansh00987/Racksmith/main/screenshots/02_ambient_7u.png)
-
-#### 3. Real-Time Depth Collision Detection
-Switching to a shallow skiff (**Intellijel Palette 62**, max depth 45.5mm) while mounting a **Doepfer A-110-1 Standard VCO** (depth 55mm) triggers an immediate physical collision alert. The system flags that the module will physically impact the case bus board.
-
-![Step 3 - Depth Collision Alert](https://raw.githubusercontent.com/Shreyansh00987/Racksmith/main/screenshots/03_depth_collision.png)
-
-#### 4. Specification Contradiction & Manufacturer Errata
-Clicking on Make Noise Maths opens the **Spec Conflict Resolution Modal**. Sanity retrieves two conflicting claims from its Knowledge Lake:
-- **Claim A (Printed Manual):** 60mA @ +12V (Quiescent idle state).
-- **Claim B (Engineering Bench Errata):** 90mA @ +12V under active high-frequency modulation.
-- **Physical Depth:** Vintage Through-Hole (45mm) vs Modern Surface-Mount (25mm).
-
-![Step 4 - Spec Conflict Modal](https://raw.githubusercontent.com/Shreyansh00987/Racksmith/main/screenshots/04_spec_conflict_modal.png)
-
-#### 5. Errata Resolution Persisted to Sanity Lake
-The user selects the **Modern SMD Revision (25mm depth / 90mA active draw)**. The selection is sent to the Sanity MCP server and saved as a persistent `userDecision` document. The depth collision warning immediately clears.
-
-![Step 5 - Errata Resolved](https://raw.githubusercontent.com/Shreyansh00987/Racksmith/main/screenshots/05_errata_resolved.png)
-
-#### 6. Verified Bill of Materials (BOM) Export
-Once all rules pass, the user exports a verified Bill of Materials with complete HP layout, depth safety margins, 3-rail current calculations, and direct manufacturer links.
-
-![Step 6 - Export BOM Modal](https://raw.githubusercontent.com/Shreyansh00987/Racksmith/main/screenshots/06_export_bom_modal.png)
-
----
-
-### 🤖 Complete Walkthrough — Example 2: Autonomous AI Agent via MCP
-
-In this second demonstration, the AI Agent plans a modular synth system autonomously using natural language:
+In this demonstration, the AI Agent plans a modular synth system autonomously using natural language while querying real content from Sanity:
 
 #### 1. AI Agent Standby State
 The user navigates to the **AI Agent** tab. The agent is initialized with direct tool bindings to the Sanity Context MCP server.
